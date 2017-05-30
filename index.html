@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Git Testout</title>
+    <title>Git Test</title>
 
     <link rel="stylesheet" href="/node_modules/bulma/css/bulma.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,6 +19,61 @@
                 <h2 class="subtitle">
                     Let's start playing around with this project
                 </h2>
+            </div>
+        </div>
+        <div class="hero-foot">
+            <div class="container has-text-centered">
+                <h1 class="title">
+                    <i class="fa fa-arrow-down"></i>
+                </h1>
+            </div>
+        </div>
+    </section>
+    <section class="hero is-info is-fullheight">
+        <div class="hero-body">
+            <div class="container content" style="color: rgba(255, 255, 255, 0.9)">
+                <h3 class="title">Cheat Sheet</h3>
+                <h4 class="subtitle">Local Workflow:</h4>
+                <p><code>git init</code>: put Git in this folder so that it keeps track of changes to files in this folder and subfolders</p>
+                <p><strong><em>Working Directory</em></strong>: the directory you&rsquo;re writing code in</p>
+                <p><strong><em>Staging Area</em></strong>: files are in the staging area if the changes in them will be included in the next save point</p>
+                <p><strong><em>Repository</em></strong>: everything Git is keeping track of</p>
+                <p><code>git status</code>: show me which files have been changed and which ones are ready to be committed</p>
+                <p><code>git add filename.txt</code>: include the changes to this file in the next commit</p>
+                <p><code>git rm filename.txt</code>: don&rsquo;t teach this on day one!</p>
+                <p><code>git mv filename.txt otherfile.txt</code>: don&rsquo;t teach this on day one!</p>
+                <p><code>git commit -m &ldquo;commit message&rdquo;</code>: wrap up all these changes and save them together with a short description of the changes</p>
+                <p><code>git log</code>: show a history of all commits</p>
+                <p><code>git diff</code>: show what is different from the last commit line by line</p>
+                <p><code>git diff 234nod</code>: show what is different between the commit 234nod and current state, line by line</p>
+                <h4 class="subtitle">Remote Repository</h4>
+                <p><code>git remote add origin address-of-remote</code>: make address-of-remote a new place to put my code and call it &ldquo;origin&rdquo;</p>
+                <p><code>git push -u origin master</code>: push my code to the location origin points to, on the master branch, and also in the future I will pull code from this same location</p>
+                <p><em>Upstream</em>: where I will pull code from in the future</p>
+                <p><em>Origin</em>: where I put backups or share my code</p>
+                <p><code>git pull</code>: grab code from another repository</p>
+                <p><code>git fetch</code>: grab code from another repository</p>
+                <p><code>git push</code>: save my history and changes in another location</p>
+                <p><em>Fork</em>: I want a GitHub repo that looks like someone else&rsquo;s repo</p>
+                <p><em>Pull Request</em>: I made some changes that I would like you to include in your repository, please accept them</p>
+                <p><code>git clone</code>: give me the code at this location</p>
+                <h4 class="subtitle">Branching</h4>
+                <p><code>git branch</code>: what are all my branches? or what are all the names of the different versions of my code?</p>
+                <p><code>git branch feature</code>: make a new branch/version of my code with the name feature</p>
+                <p><code>git checkout feature</code>: move to that branch/version of my code so I can make changes to that branch/version of my code</p>
+                <p><code>master</code>: the name of the branch which should be the official, working, well documented, version of my code</p>
+                <p><code>git merge</code>: combine the history of two branches so I can have the changes from both in one place</p>
+                <p><em>Merge Conflict</em>: Git does not know how to combine two histories and needs human assistance</p>
+                <h4 class="subtitle">Other Things</h4>
+                <p><code>git rebase</code></p>
+                <p><code>git cherry-pick</code></p>
+                <p><code>git bisect</code></p>
+                <p><code>git amend</code></p>
+                <p><code>git reflog</code></p>
+                <p><code>git blame</code></p>
+                <p><code>git blame</code></p>
+                <p><code>git rebase</code></p>
+                <p><strong><em>HEAD</em></strong></p>
             </div>
         </div>
     </section>
